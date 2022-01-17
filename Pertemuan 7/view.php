@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_get("Asia/Jakarta");
-include 'pertemuan 7.php';
+include 'koneksi.php';
 ?>
 
 
