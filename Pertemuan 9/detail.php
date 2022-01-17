@@ -4,7 +4,6 @@ date_default_timezone_get("Asia/Jakarta");
 require 'functions.php';
 $id= $_GET['id'];
 $mhs = query("SELECT*FROM mahasiswa WHERE id=$id");
-var_dump ($mhs);
 ?>
 
 <html lang="en">
