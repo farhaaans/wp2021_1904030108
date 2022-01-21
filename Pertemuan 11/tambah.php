@@ -1,6 +1,5 @@
 <?php
 date_default_timezone_get("Asia/Jakarta");
-
 require 'functions.php';
 
 if (isset ($_POST['tambah'])) {
@@ -33,16 +32,16 @@ if (isset ($_POST['tambah'])) {
   </head>
   <body>
 	<!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
 		<div class="container-fluid">
-		<a class="navbar-brand" href="#">Mahasiswa</a>
+		<a class="navbar-brand text-white" href="#">Mahasiswa</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 			</ul>
-		<div class="text-black">
+		<div class="text-white">
 		<?php echo date('l, d-m-y'); ?>
 		</div>
 		</div>
@@ -51,7 +50,7 @@ if (isset ($_POST['tambah'])) {
 	
 	<!-- Sidebar -->
 	<div class="row">
-		<div class="col-md-2 pt-4">
+		<div class="col-md-2 pt-4 bg-secondary">
 		<!--menu -->
 		<ul class="nav flex-column">
 		<li class="nav-item">
@@ -59,16 +58,16 @@ if (isset ($_POST['tambah'])) {
 			Dashboard</a><hr class="bg-dark">
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="index.php"><i class="fas fa-users"></i> Calon Mahasiswa</a><hr>
+			<a class="nav-link text-white" href="index.php"><i class="fas fa-users"></i> Calon Mahasiswa</a><hr>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="tambah.php"><i class="fas fa-user-circle"></i> Input Mahasiswa</a><hr>
+			<a class="nav-link text-white" href="tambah.php"><i class="fas fa-user-circle"></i> Input Mahasiswa</a><hr>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#"><i class="fas fa-users"></i> Daftar Dosen</a><hr>
+			<a class="nav-link text-white" href="#"><i class="fas fa-users"></i> Daftar Dosen</a><hr>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#"><i class="fas fa-calendar"></i> Jadwal Kuliah</a><hr>
+			<a class="nav-link text-white" href="#"><i class="fas fa-calendar"></i> Jadwal Kuliah</a><hr>
 		</ul>
 		</div>
 		
