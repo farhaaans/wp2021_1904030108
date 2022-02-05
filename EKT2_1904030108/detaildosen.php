@@ -71,9 +71,9 @@ $dsn = query("SELECT*FROM dosen WHERE id=$id");
 		<h3><i class="fas fa-user-circle"></i>Data Dosen Fakultas Teknik</h3><hr>
 		
 		<ul class="list-group">
-			<li class="list-group-item"><img src="img/<?= $dsn['Foto']; ?>" alt="" width="100px"> </li>
-			<li class="list-group-item">Nama :<?= $dsn['Nama']; ?></li>
-			<li class="list-group-item">NIDN :<?= $dsn['NIDN']; ?></li>
+			<li class="list-group-item"><img src="img/<?= $dsn['Foto']; ?>" alt="" width="200px"> </li>
+			<li class="list-group-item">Nama : <?= $dsn['Nama']; ?></li>
+			<li class="list-group-item">NIDN : <?= $dsn['NIDN']; ?></li>
 			<li class="list-group-item">Jenis Kelamin : <?= $dsn['Jenis Kelamin']; ?></li>
 			<li class="list-group-item">Alamat : <?= $dsn['Alamat']; ?></li>
 			<li class="list-group-item">Agama : <?= $dsn['Agama']; ?> </li>
