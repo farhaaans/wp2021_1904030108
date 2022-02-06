@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Feb 2022 pada 18.26
--- Versi server: 10.4.19-MariaDB
--- Versi PHP: 7.3.28
+-- Generation Time: Feb 06, 2022 at 04:25 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,25 +24,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `anggota`
+-- Table structure for table `anggota`
 --
 
 CREATE TABLE `anggota` (
-  `No` int(6) NOT NULL,
-  `Nama` varchar(50) NOT NULL,
+  `No` int(4) NOT NULL,
+  `Nama` varchar(25) NOT NULL,
   `Jenis Kelamin` varchar(10) NOT NULL,
-  `Alamat` varchar(30) NOT NULL
+  `Alamat` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `buku`
+-- Table structure for table `buku`
 --
 
 CREATE TABLE `buku` (
-  `No` int(6) NOT NULL,
-  `Nama` varchar(30) NOT NULL,
+  `No` int(4) NOT NULL,
+  `Nama` varchar(25) NOT NULL,
   `Tahun` int(4) NOT NULL,
   `Klasifikasi` varchar(20) NOT NULL,
   `Jumlah` int(4) NOT NULL
@@ -53,32 +53,32 @@ CREATE TABLE `buku` (
 --
 
 --
--- Indeks untuk tabel `anggota`
+-- Indexes for table `anggota`
 --
 ALTER TABLE `anggota`
   ADD PRIMARY KEY (`No`);
 
 --
--- Indeks untuk tabel `buku`
+-- Indexes for table `buku`
 --
 ALTER TABLE `buku`
   ADD PRIMARY KEY (`No`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `anggota`
+-- AUTO_INCREMENT for table `anggota`
 --
 ALTER TABLE `anggota`
-  MODIFY `No` int(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `No` int(4) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `buku`
+-- AUTO_INCREMENT for table `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `No` int(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `No` int(4) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

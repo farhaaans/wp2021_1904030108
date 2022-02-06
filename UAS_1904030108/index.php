@@ -13,7 +13,7 @@
 	<title>Perpustakaan Cerdas</title>
 	</head>
 	
-	<body class="bg-dark">
+	<body class="bg-secondary">
 	<!-- Navbar -->
 	
 		<ul class="nav justify-content-end bg-info fixed-top">
@@ -29,11 +29,12 @@
 		</ul>
 		
 	<!-- Konten -->
-	<div class="konten text-white text-center bg-dark card" style="padding:100px">
-		<div class="card-body border border-white">
+	<div class="text-dark text-center" style="padding:100px">
+		<div class="card-body border border-dark bg-light">
 			<h1><b> Perpustakaan Cerdas </b></h1>
 			<hr>
 			<p><b> Selamat Datang di Perpustakaan Cerdas</b> </p>
+			<p><b> Kotabumi,Tangerang</b> </p>
 			<img src="image/bg.jpg" align="middle"> <br> <br>
 			<p><b> Perpustakaan dengan banyak jenis buku yang disusun sesuai denga klasifikasi buku tersebut.</b> </p>
 		</div>

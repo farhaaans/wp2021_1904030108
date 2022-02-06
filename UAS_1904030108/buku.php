@@ -43,7 +43,7 @@ if(isset($_POST['cari'])) {
 		</div>
 	
 		<!--Konten -->
-		<div class="card" style="padding-left:100px; padding-right:100px; padding-top:30px; padding-bottom:100px;">
+		<div class="text-center" style="padding-left:100px; padding-right:100px; padding-top:30px; padding-bottom:100px;">
 		<div class="card-body border border-dark bg-light">
 		<h3><i class="fas fa-book"></i></i>Daftar Buku</h3><hr>
 		
@@ -54,14 +54,12 @@ if(isset($_POST['cari'])) {
 			</form>
 
 		<hr>
-			<table class="table table-success table-striped">
+			<table class="table table-success table-striped text-center">
 			<thead>
 				<tr>
 				  <th scope="col">Id</th>
 				  <th scope="col">Nama</th>
-				  <th scope="col">Tahun</th>
 				  <th scope="col">Klasifikasi</th>
-				  <th scope="col">Jumlah</th>
 				  <th scope="col">Detail</th>
 				</tr>
 			</thead>
@@ -77,12 +75,10 @@ if(isset($_POST['cari'])) {
 			<tbody>
 			<?php $Id=1; ?>
 			<?php foreach ($buku as $bk) : ?>
-				<tr>  
+				<tr class="table-secondary">  
 				  <th scope="row"><?php echo $Id; ?></th>
 				  <td><?php echo $bk['Nama']; ?></td>
-				  <td><?php echo $bk['Tahun']; ?></td>
 				  <td><?php echo $bk['Klasifikasi']; ?></td>
-				  <td><?php echo $bk['Jumlah']; ?></td>
 				  <td><a href="detailbuku.php?id=<?= $bk['No']; ?>" class="btn btn-warning" role="button">detail</a> </td>
 				</tr>
 			<?php $Id++; ?>

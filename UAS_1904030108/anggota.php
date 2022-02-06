@@ -42,7 +42,7 @@ if(isset($_POST['cari'])) {
 			</ul>
 		</div>
 		
-	<div class="card " style="padding-left:100px; padding-right:100px; padding-top:30px; padding-bottom:100px;">
+	<div class="text-center" style="padding-left:100px; padding-right:100px; padding-top:30px; padding-bottom:100px;">
 		<div class="card-body border border-dark bg-light">
 		<!--Konten -->
 		<h3><i class="fas fa-user-circle"></i>Daftar Anggota</h3><hr>
@@ -54,13 +54,11 @@ if(isset($_POST['cari'])) {
 			</form>
 
 		<hr>
-			<table class="table table-success table-striped">
+			<table class="table table-success table-striped text-center">
 			<thead>
 				<tr>
 				  <th scope="col">No</th>
 				  <th scope="col">Nama</th>
-				  <th scope="col">Jenis Kelamin</th>
-				  <th scope="col">Alamat</th>
 				  <th scope="col">Detail</th>
 				</tr>
 			</thead>
@@ -76,11 +74,9 @@ if(isset($_POST['cari'])) {
 			<tbody>
 			<?php $Id=1; ?>
 			<?php foreach ($anggota as $agt) : ?>
-				<tr>  
+				<tr class="table-secondary">  
 				  <th scope="row"><?php echo $Id; ?></th>
 				  <td><?php echo $agt['Nama']; ?></td>
-				  <td><?php echo $agt['Jenis Kelamin']; ?></td>
-				  <td><?php echo $agt['Alamat']; ?></td>
 				  <td><a href="detailanggota.php?id=<?= $agt['No']; ?>" class="btn btn-warning" role="button">detail</a> </td>
 				</tr>
 			<?php $Id++; ?>

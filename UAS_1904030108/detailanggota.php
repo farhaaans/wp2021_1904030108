@@ -47,7 +47,7 @@ $anggota = query("SELECT*FROM anggota WHERE no=$id");
 	
 		
 		
-	<div class="card" style="padding-left:100px; padding-right:100px; padding-top:30px; padding-bottom:100px;">
+	<div style="padding-left:100px; padding-right:100px; padding-top:30px; padding-bottom:100px;">
 		<div class="card-body border border-dark bg-light">
 		<!--Konten -->
 		<h3><i class="fas fa-user-circle"></i>Data Anggota Perpustakaan Cerdas</h3><hr>
